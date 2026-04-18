@@ -43,7 +43,7 @@ body {
   padding: 0 20px;
   height: 100px;
   gap: 30px;
-  background: linear-gradient(to bottom, #2b0b9e, #ffffff);
+  background: linear-gradient(to bottom, #2c0209f6, #ffffff);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -384,6 +384,7 @@ body {
 .form__button:hover {
   background: #806cc9;
 }
+
 
 /* Footer */
 .footer {
