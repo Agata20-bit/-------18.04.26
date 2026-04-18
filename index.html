@@ -1,11 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header center">
+      <!-- <img src="./img/logo_1.jpeg" alt="Логотип" class="header__logo" /> -->
+      <h2 class="header__logo">A‑gata</h2>
+      <nav class="nav">
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#works" class="nav__link">Работы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <nav class="nav-mobile">
+        <div class="nav-mobile__burger">
+          <span class="nav-mobile__line"></span>
+          <span class="nav-mobile__line"></span>
+          <span class="nav-mobile__line"></span>
+        </div>
+        <div class="nav-mobile__list">
+          <a href="#about" class="nav__link">Обо мне</a>
+          <a href="#works" class="nav__link">Работы</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="top center">
+      <div class="top__box">
+        <h1 class="top__title">
+          Привет, <br />я начинающий Frontend‑разработчик <br />
+          Агата
+        </h1>
+        <p class="top__text">
+          Разрабатываю адаптивные веб‑интерфейсы с интерактивностью на чистом
+          JavaScript.<br />
+          Что умею: <br />
+          - верстать по дизайну (Figma); <br />
+          - добавлять анимации и интерактивные элементы; <br />
+        </p>
+      </div>
+      <img class="top__img" src="./img/photo.jpg" alt="Фото" />
+    </section>
+
+    <section id="about" class="about center">
+      <h2 class="about__title">Обо мне</h2>
+      <p class="about__text">
+        Мой фокус — создание адаптивных и семантических интерфейсов. В учебных
+        проектах применяла методологию БЭМ для структурирования кода. Имею опыт:
+        адаптивной вёрстки по макетам; работы с DOM (поиск элементов, изменение
+        содержимого); добавления базовой интерактивности на JavaScript;
+        подключения данных через API (GET‑запросы). Выполнила несколько
+        проектов, где отработала навыки pixel‑perfect вёрстки и реализации
+        простой логики.
+        <br />
+        Ищу первые заказы для практики и развития. Готова к несложным задачам,
+        внимательно изучаю ТЗ, соблюдаю сроки. Быстро учусь новому.
+      </p>
+      <h2 class="about__title">Навыки</h2>
+      <div class="about__box">
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/html5.svg" alt="HTML5" />HTML5
+        </div>
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/css3.svg" alt="CSS3" />CSS3
+        </div>
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/Sass.svg" alt="SASS" />SASS
+        </div>
+        <div class="about__skill-box">
+          <img
+            class="about__img"
+            src="./img/JavaScript.svg"
+            alt="JavaScript"
+          />JavaScript
+        </div>
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/Git.svg" alt="Git" />Git
+        </div>
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/Figma.svg" alt="Figma" />Figma
+        </div>
+        <div class="about__skill-box">
+          <img class="about__img" src="./img/tilda.svg" alt="Tilda" />Tilda
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works center">
+      <h2 class="works__title">Мои работы</h2>
+      <div class="works__box">
+        <article class="work">
+          <img
+            class="work__screen"
+            src="./img/shop.png"
+            alt="Скриншот проекта"
+          />
+          <div class="work__description">
+            <h3 class="work__title">
+              Интернет-магазин мебели (учебный проект)
+            </h3>
+            <div class="work__info">
+              <div class="work__year">2025</div>
+              <div class="work__tag">Адаптивная вёрстка, HTML/CSS</div>
+            </div>
+            <p class="work__text">
+              Проект: адаптивный интернет‑магазин мебели. Реализованные
+              технологии и подходы: адаптивная вёрстка (медиазапросы, отзывчивые
+              изображения); модульная сетка на Flexbox и CSS Grid;
+              структурирование кода по методологии БЭМ; препроцессинг (Sass) для
+              масштабируемости стилей.
+            </p>
+            <div class="work__btn-box">
+              <a
+                href="https://github.com/Anickonoff/1-nd-course-hw"
+                class="work__link"
+                >Посмотреть код</a
+              >
+              <a href="https://project1.anickonoff.ru" class="work__link"
+                >Посмотреть сайт</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="work">
+          <img
+            class="work__screen"
+            src="./img/minigame.png"
+            alt="Скриншот проекта"
+          />
+          <div class="work__description">
+            <h3 class="work__title">Браузерные мини-игры (учебный проект)</h3>
+            <div class="work__info">
+              <div class="work__year">2025</div>
+              <div class="work__tag">JavaScript (основы DOM)</div>
+            </div>
+            <p class="work__text">
+              Интерактивный сайт с мини‑играми: демонстрация базовых навыков
+              JavaScript и работы с DOM.
+            </p>
+            <div class="work__btn-box">
+              <a
+                href="https://github.com/Anickonoff/2-nd-course-hw"
+                class="work__link"
+                >Посмотреть код</a
+              >
+              <a href="https://project2.anickonoff.ru" class="work__link"
+                >Посмотреть сайт</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="work">
+          <img
+            class="work__screen"
+            src="./img/comments.png"
+            alt="Скриншот проекта"
+          />
+          <div class="work__description">
+            <h3 class="work__title">Комментарии (учебный проект)</h3>
+            <div class="work__info">
+              <div class="work__year">2025</div>
+              <div class="work__tag">JavaScript, API, DOM</div>
+            </div>
+            <p class="work__text">
+              Веб‑приложение для управления комментариями чистый JavaScript
+              (манипуляции с DOM); взаимодействие с API; сборка: Webpack;
+              контроль качества: ESLint, Prettier.
+            </p>
+            <div class="work__btn-box">
+              <a
+                href="https://github.com/Anickonoff/webdev-dom-homework"
+                class="work__link"
+                >Посмотреть код</a
+              >
+              <a href="https://project4.anickonoff.ru" class="work__link"
+                >Посмотреть сайт</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts center">
+      <div class="contacts__box">
+        <h2 class="contacts__title">Свяжитесь со мной</h2>
+        <p class="contacts__text">
+          Ищу практику в веб‑разработке. Пишите — обсудим сотрудничество.
+        </p>
+        <div class="contacts__buttons">
+          <a href="https://t.me/Agata" class="contacts__link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              class="contacts__img"
+            >
+              <path
+                d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://github.com/Agata20-bit" class="contacts__link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 92 92"
+              class="contacts__img"
+            >
+              <defs>
+                <clipPath id="a">
+                  <path d="M0 .113h91.887V92H0Zm0 0"></path>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#a)">
+                <path
+                  style="stroke: none; fill-rule: nonzero; fill-opacity: 1"
+                  d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          
+          <a href="https://vk.com/page-777107_28406709" class="contacts__link">
+            <svg
+              class="contacts__img"
+              enable-background="new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+             
+              <path
+                stroke="#fff"
+                stroke-width="2"
+                fill="none"
+                d="M45,20c0,0-3,1-4,2c-1,1-2,3-2,4s1,2,2,3c1,1,3,2,4,2s4-1,4-2s-1-3-2-4C44,21,42,20,41,20s-3,1-4,2
+        c-1,1-1,3-1,4s2,2,3,3s4,1,5,1s3-1,4-2c1-1,1-3,1-4S46,21,45,20z M36,28c-1,0-2,1-2,2v4c0,1,1,2,2,2h2c1,0,2-1,2-2v-2h-2v-2H36z
+        M40,34c0,1,1,2,2,2h2c1,0,2-1,2-2v-2h-2v-2h-2V34z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <form class="form" action="#" id="form">
+        <input
+          class="form__input"
+          type="text"
+          name="name"
+          required=""
+          placeholder="Введите Ваше имя"
+        />
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          required=""
+          placeholder="Введите Ваш email"
+        />
+        <textarea
+          class="form__textarea"
+          name="message"
+          placeholder="Введите Ваше сообщение"
+        ></textarea>
+        <div class="form__secred">
+          <input
+            class="form__input"
+            type="text"
+            name="spam-check"
+            id="spam-check"
+            value=""
+            placeholder="Для ботов спамеров"
+          />
+        </div>
+        <input
+          class="form__input"
+          type="hidden"
+          name="form_load_time"
+          id="form_load_time"
+          value="1776091414"
+        />
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Агата Калмычек. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Напишите мне</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Сообщение" rows="4" required></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
