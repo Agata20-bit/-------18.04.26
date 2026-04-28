@@ -43,23 +43,22 @@ body {
   padding: 0 20px;
   height: 100px;
   gap: 30px;
-  background: linear-gradient(to bottom, #2c0209f6, #ffffff);
+  /* background: linear-gradient(to bottom, #2c0209f6, #ffffff);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+   */
 }
 
 
 .header__logo {
   font-size: 3rem; /* Увеличиваем размер шрифта (подберите значение под себя) */
   font-weight: 700; /* Жирный шрифт для выразительности */
-  color: white; /* Внутренняя часть — белая */
+  color:   #2b0b9e;
+; /* Внутренняя часть — белая */
   text-shadow: 0 0 0 2px black; /* Чёрная окантовка (регулируйте толщину через последнее значение "2px") */
   letter-spacing: 1px; /* Небольшое расстояние между буквами (опционально) */
   margin: 0 30px; /* Отступы по бокам (опционально, для баланса) */
 }
-
-
-
 
 .nav {
   display: flex;
@@ -70,14 +69,17 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #000000;
+  font-weight: 550;
+  transition: all 0.3s;
+  padding: 5px 10px;
 }
 
 .nav__link:hover {
   color: #2b0b9e;
+  text-shadow: 0 0 1px #8a4bc5; /* тень при наведении */
 }
+
 
 /* Mobile navigation */
 .nav-mobile {
@@ -198,7 +200,7 @@ body {
 /* Works section */
 .works {
   padding: 80px 0;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
 }
 
 .works__title {
@@ -228,7 +230,7 @@ body {
 
 .work__screen {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   object-fit: cover;
 }
 
